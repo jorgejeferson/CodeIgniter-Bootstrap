@@ -2,6 +2,6 @@
  * All your custom CSS should go into this file
  */
 
-body {
-   padding-top: 15px;
-}
+body { padding-top: 15px; }
+.view-baba{ height: 150px; }
+.rodape{ margin-top: 30px; }

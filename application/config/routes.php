@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "frontpage";
+$route['default_controller'] = "esporte";
 $route['404_override'] = '';
 
 

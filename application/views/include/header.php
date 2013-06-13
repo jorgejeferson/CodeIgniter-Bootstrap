@@ -11,13 +11,31 @@
 
    <link href="<?= base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
    <link href="<?= base_url('assets/css/bootstrap-responsive.min.css') ?>" rel="stylesheet">
-	<link href="<?= base_url('assets/css/font-awesome.css') ?>" rel="stylesheet">
+   <link href="<?= base_url('assets/css/font-awesome.css') ?>" rel="stylesheet">
    <link href="<?= base_url('assets/css/custom.css') ?>" rel="stylesheet">
 
-   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-   <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/1.2.1/lodash.min.js"></script>
+   <script src="<?= base_url('assets/js/jquery.min.1.9.1.js') ?>"></script>
+   <script src="<?= base_url('assets/js/jquery-ui.min.1.10.3.js') ?>"></script>
+   <script src="<?= base_url('assets/js/lodash.min.1.2.1.js') ?>"></script>
    <script src="<?= base_url('assets/js/bootstrap.min.js') ?>"></script>
-	<script src="<?= base_url('assets/js/custom.js') ?>"></script>
+   <script src="<?= base_url('assets/js/custom.js') ?>"></script>
 </head>
 <body>
+   <div class="container">
+      <div class="subnav" style="margin-bottom: 10px;">
+            <ul class="nav nav-pills">
+               <li <? if(is_active()): ?>class="active"<? endif; ?>><a href="<?= base_url() ?>">Esporte Coletivo</a></li>
+               <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown">Opções <b class="caret"></b></a>
+               <ul class="dropdown-menu">
+                  <li><a href="">Eventos</a></li>
+                  <li><a href="">Campos</a></li>
+                  <li><a href="">Fale Conosco</a></li>
+                  <li><a href="">Parceiros</a></li>
+               </ul>
+               </li> 
+            <ul class="nav nav-pills pull-right">
+               <li><a href="<?= base_url() ?>esporte/acessar" class="btn btn-success">Acessar</a></li>
+               </ul>
+            </ul>
+      </div>

@@ -1,5 +1,5 @@
 <div style="width: 320px; margin: 0 auto;">
-   <h3>Login</h3>
+   <h3>Acesso</h3>
    <? if (!empty($error)): ?>
       <div class="alert alert-error">
          <b>Error!</b> <?= $error ?>
@@ -10,10 +10,10 @@
       </div>
    <? endif; ?>
    <form class="well" method="POST">
-      <label>Username</label>
+      <label>Usuário</label>
       <input type="text" name="username" style="width: 260px;" <? if (!empty($username)): ?> value="<?= $username ?>" <? endif; ?>>
-      <label>Password</label>
+      <label>Senha</label>
       <input type="password" name="password" style="width: 260px;">
-      <button type="submit" class="btn btn-primary">Login</button>
+      <button type="submit" class="btn btn-primary">Entrar</button>
    </form>
 </div>
